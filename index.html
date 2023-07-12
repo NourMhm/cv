@@ -24,16 +24,34 @@
       <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
           <div class="container">
-            <div class="navbar-translate"><a class="navbar-brand" href="index.html" rel="tooltip">السيرة الذاتية</a>
+            <!-- <div class="navbar-translate"><a class="navbar-brand" href="index.html" rel="tooltip">السيرة الذاتية</a> -->
+             <!-- Language Dropdown -->
+             <div class="language-dropdown">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+                  <div class="dropdown-menu langWrap" aria-labelledby="dropdownMenuButton" >
+                      <button class="dropdown-item" onclick="changeLanguage('ar')">
+                        العربية
+                      </button>
+                      <button class="dropdown-item" onclick="changeLanguage('eng')">
+                        English
+                      </button>
+                    
+                  </div>
+              </div>
+             
+          </div>
+
               <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">معلومات شخصية</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">المهارات</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">نماذج الأعمال</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">الخبرات</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">التواصل</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll info1"  id="info1" href="#about">معلومات شخصية</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll skill1" id="skill1"  href="#skill">المهارات</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll portfolio1" id="portfolio1" href="#portfolio">نماذج الأعمال</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll experince1" id="experince1" href="#experience">الخبرات</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll contact1 " id="contact1" href="#contact">التواصل</a></li>
+               
               </ul>
             </div>
           </div>
@@ -49,14 +67,14 @@
       <div class="container">
         <div class="content-center">
           <div class="cc-profile-image"><a href="#"><img src="images/nour1.jpg" onclick="changeImage(this)" alt="Image"/></a></div>
-          <div class="h2 title">نور الدالي </div>
-          <p class="category text-white">Web Developer, Programmer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">وظفني</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">تحميل CV</a>
-    
+          <div class="h2 title name1" id="name1">نور الدالي </div>
+          
+          <p class="category text-white">Web Developer, Programmer</p><a class="btn btn-primary smooth-scroll mr-2 hire1" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" id="hire1">وظفني</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" id="cv1">تحميل CV</a>
         </div>
       </div>
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/nour.aldale?mibextid=ZbWKwL" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/Nour_Mhm5" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="nour92mhm@gmail.com" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://instagram.com/aldali.nour?igshid=ZDc4ODBmNjlmNQ==" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/nour.aldale?mibextid=ZbWKwL" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/Nour_Mhm5" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://instagram.com/aldali.nour?igshid=ZDc4ODBmNjlmNQ==" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
         </div>
       </div>
     </div>
@@ -68,30 +86,30 @@
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
-            <div class="h4 mt-0 title">نبذة مختصرة </div>
-            <p>حديثة التخرج من الكلية ، مع خبرة سابقة في انجاز مشاريع برمجية خلال سنواتي الدراسية ولدي معرفة بالعديد من لغات البرمجة وأطر العمل و أدوات ادارة قواعد البيانات ، كما أملك القدرة على العمل الجماعي والإبداع أثناء العمل مع فريق وأستطيع تحمل المسؤولية المكلف بها</p>
-            <p>خبرة في العمل التطوعي في الهلال الأحمر العربي السوري لمدة ست سنوات </p>
-            <p>متحمسة لتطوير مهاراتي والعمل ضمن شركة تساعدني في تطوير وتحسين واكتساب المهارات اللازمة لأصبح من أفضل المهندسين.</p>
+            <div class="h4 mt-0 title" id="about1">نبذة مختصرة </div>
+            <p id="about2">حديثة التخرج من الكلية ، مع خبرة سابقة في انجاز مشاريع برمجية خلال سنواتي الدراسية ولدي معرفة بالعديد من لغات البرمجة وأطر العمل و أدوات ادارة قواعد البيانات ، كما أملك القدرة على العمل الجماعي والإبداع أثناء العمل مع فريق وأستطيع تحمل المسؤولية المكلف بها
+           <br> خبرة في العمل التطوعي في الهلال الأحمر العربي السوري لمدة ست سنوات 
+            <br>متحمسة لتطوير مهاراتي والعمل ضمن شركة تساعدني في تطوير وتحسين واكتساب المهارات اللازمة لأصبح من أفضل المهندسين.</p>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
-            <div class="h4 mt-0 title">المعلومات الأساسية </div>
+            <div class="h4 mt-0 title" id="info3">المعلومات الأساسية </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">البريد الالكتروني:</strong></div>
+              <div class="col-sm-4"><strong class="text-uppercase" id="email3">البريد الالكتروني:</strong></div>
               <div class="col-sm-8">nour92mhm@gmail.com</div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">الهاتف:</strong></div>
+              <div class="col-sm-4"><strong class="text-uppercase" id="phone3">الهاتف:</strong></div>
               <div class="col-sm-8" dir="ltr" style="text-align:right;">+963 956 748 941</div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">العنوان:</strong></div>
-              <div class="col-sm-8">سوريا - ريف دمشق </div>
+              <div class="col-sm-4"><strong class="text-uppercase" id="address3">العنوان:</strong></div>
+              <div class="col-sm-8" id="addval">سوريا - ريف دمشق </div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">اللغات:</strong></div>
-              <div class="col-sm-8">العربية ، الانكليزية ، الفرنسية</div>
+              <div class="col-sm-4"><strong class="text-uppercase" id="lang3">اللغات:</strong></div>
+              <div class="col-sm-8" id="langval">العربية ، الانكليزية ، الفرنسية</div>
             </div>
           </div>
         </div>
@@ -518,7 +536,7 @@
 </div></div>
     </div>
     <footer class="footer">
-      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
       <div class="h4 title text-center">Nour Aldali </div>
       <div class="text-center text-muted">
         <p>&copy; Creative CV. All rights reserved.<br></p>
@@ -551,9 +569,148 @@
   };
 
   document.getElementById("btn-download1").addEventListener("click", downloadPDF);
-    //
+  
     
    </script>
+
+   
+<script>
+  // Create a function to change
+  // the hash value of the page
+  function changeLanguage(lang) {
+    location.hash = lang;
+    location.reload();
+  }
+
+  // Define the language reload anchors
+  var language = {
+    eng: {
+      name11: "Nour Aldali ",
+      info11 : "personal information",
+      skill11 : "skill",
+      portfolio11 : "portfolio",
+      experince11 : "experince" ,
+      contact11 : "contact",
+      cv11: "CV download",
+      hire11: "Hire me",
+      about11: "about",
+      about22:"to be able to work for an encouraging and stable company that will assist in developing, improving and obtaining the necessary skills in order to become the best engineer possible.",
+      info33:"Basic information" ,
+      email33: "Email",
+      phone33:"Phone",
+      address33:"Address",
+      lang33: "Languges",
+      addval1:"Syria - Damascus countryside" ,
+      langval1:"Arabic, English, French",
+
+    },
+    ar: {
+      name11: "نور الدالي" ,
+      info11 : " المعلومات الشخصية",
+      skill11 : "المهارات",
+      portfolio11 : "نماذج الأعمال",
+      experince11 : "الخبرات" ,
+      contact11 : "التواصل ",
+      cv11: "تحميل CV",
+      hire11: "وظفني",
+      about11: "نبذة مختصرة",
+      about22:"حديثة التخرج من الكلية ، مع خبرة سابقة في انجاز مشاريع برمجية خلال سنواتي الدراسية <br>ولدي معرفة بالعديد من لغات البرمجة وأطر العمل و أدوات ادارة قواعد البيانات ، كما أملك القدرة على العمل الجماعي والإبداع أثناء العمل مع فريق وأستطيع تحمل المسؤولية المكلف بها<br>خبرة في العمل التطوعي في الهلال الأحمر العربي السوري لمدة ست سنواتمتحمسة لتطوير مهاراتي والعمل ضمن شركة تساعدني في تطوير وتحسين واكتساب المهارات اللازمة لأصبح من أفضل المهندسين.",
+      info33:"المعلومات الأساسية" ,
+      email33: "البريد الالكتروني",
+      phone33:"الهاتف",
+      address33:"العنوان",
+      lang33: "اللغات",
+      addval1:"سوريا - ريف دمشق" ,
+      langval1:"العربية ، الانكليزية ، الفرنسية",
+
+    },  };
+
+  // Check if a hash value exists in the URL
+  if (window.location.hash) {
+
+
+    
+
+    // Set the content of the webpage 
+    // depending on the hash value
+    if (window.location.hash == "#ar") {
+      name1.textContent =
+        language.ar.name11;
+      info1.textContent = 
+        language.ar.info11;
+      skill1.textContent = 
+        language.ar.skill11;
+      portfolio1.textContent = 
+        language.ar.portfolio11;
+      experince1.textContent = 
+        language.ar.experince11;
+      contact1.textContent = 
+        language.ar.contact11; 
+      cv1.textContent = 
+        language.ar.cv11;
+      hire1.textContent = 
+        language.ar.hire11; 
+      about1.textContent = 
+        language.ar.about11;  
+      about2.textContent = 
+        language.ar.about22;  
+      info3.textContent = 
+        language.ar.info33;
+      email3.textContent = 
+        language.ar.email33;
+      phone3.textContent = 
+        language.ar.phone33;
+      address3.textContent = 
+        language.ar.address33;
+      lang3.textContent = 
+        language.ar.lang33;  
+      addval.textContent = 
+        language.ar.addval1;
+      langval.textContent = 
+        language.ar.langval1;  
+        
+    }
+    else if (window.location.hash == "#eng") {
+      name1.textContent =
+        language.eng.name11;
+      info1.textContent = 
+        language.eng.info11;
+      skill1.textContent = 
+        language.eng.skill11;
+      portfolio1.textContent = 
+        language.eng.portfolio11;
+      experince1.textContent = 
+        language.eng.experince11;
+      contact1.textContent = 
+        language.eng.contact11;  
+      cv1.textContent = 
+        language.eng.cv11;
+      hire1.textContent = 
+        language.eng.hire11;  
+      
+      about1.textContent = 
+        language.eng.about11;  
+      about2.textContent = 
+        language.eng.about22;
+      info3.textContent = 
+        language.eng.info33;
+      email3.textContent = 
+        language.eng.email33;
+      phone3.textContent = 
+        language.eng.phone33;
+      address3.textContent = 
+        language.eng.address33;
+      lang3.textContent = 
+        language.eng.lang33;  
+      addval.textContent = 
+        language.eng.addval1;
+      langval.textContent = 
+        language.eng.langval1;  
+        
+    }
+  }
+</script>
+ 
   </body>
   
 </html>
